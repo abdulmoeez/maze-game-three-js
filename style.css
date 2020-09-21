@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background: url(textures/texture.jpg);
+}
+
+#allthethings {
+  width:0px;
+  height:0px;
+
+  border-left: 300px solid transparent;
+  border-right:300px solid transparent;
+  border-top: 300px solid transparent;
+  border-radius: px;
+  position:relative;
+  margin:auto;
+  top:5px;
+  left:2px;
+  
+}
+
+#single {
+  
+  position:relative;
+  bottom:330px;
+  right:300px;
+  height:50px;
+  width:600px;
+  background:#006680;
+  text-align:center;
+  font-size:30px;
+ background-size: 1px 300%;
+ -webkit-transition:0.5s;
+  transition:0.5s;
+  color:orange;
+  font-family:shadows into light;
+  
+  cursor:pointer;
+  
+  
+  
+}
+
+#single:hover {
+  background:#7A0000;
+  color:white;
+-webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+  
+  
+}
+
+#multiplayer:hover {
+  background:#7A0000;
+  color:white;
+   
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+  
+}
+
+#credits:hover {
+  background:#7A0000;
+  color:white;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+}
+
+#options:hover {
+  background:#7A0000;
+  color:white;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+}
+
+#left {
+  height:100px;
+    width:600px;
+  background:orange;
+  position:absolute;
+  z-index:6;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  top:-175px;
+  right:-104px;
+  border-top:1px solid white;
+  
+}
+#right {
+  height:100px;
+  width:600px;
+  background:orange;
+  position:absolute;
+  top:-229px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  z-index:7;
+  left:-56px;
+  border-top:1px solid white;
+  
+  
+}
+
+
+
+#single p {
+  position:relative;
+  top:2px;
+  right:4px;
+  
+  
+}
+
+
+.options{
+    margin-top: 40px;
+}
+#options {
+  
+  height:50px;
+  width:400px;
+  background:#006680;
+  position:relative;
+  bottom:360px;
+  right:200px;
+  font-size:30px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;  
+}
+
+#options p {
+  position:relative;
+  top:0px;
+  right:4px;
+  
+}
+
+#credits {
+  height:50px;
+  width:300px;
+  position:relative;
+  background:#006680;
+  bottom:375px;
+  font-size:30px;
+  right:150px;
+  text-align:center;
+  font-family:shadows into light;
+  color:orange;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+}
+
+#credits p {
+  position:relative;
+  top:0px;
+  
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

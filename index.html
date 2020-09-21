@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <section class="starterContent">
+        <div id="creditsModal" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Hey, I am the man who wrote the code that travels in the forms of bits to your computer after travelling many of miles and runs in your computer, Keeping that in mind, it is your responsibility to give it a like and you can do so by smiling :).</p>
+            </div>
+        </div>
+
+        <div id="optionsModal" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Just dont hit the walls and try to find a escape within the time</p>
+            </div>
+        </div>
+
+        <div id="allthethings">
+            <div class="options" id="left"></div>
+            <div class="options startGame" id="single"><p class="startGame">PLAY</p></div>
+            <div onclick="modalToggle();" class="options" id="options" data-toggle="modalClose" data-target="#optionsModal"><p>OPTIONS</p></div>
+            <div onclick="modalToggle();" class="options" id="credits" data-toggle="modalClose" data-target="#creditsModal"><p>CREDITS</p></div>
+            <div class="options" id="right"></div>
+        </div>
+    </section>  
+        <script>
+            
+            function modalToggle(e){
+                var target = window.event.target.parentElement
+                var modal = target.getAttribute("data-target");
+                document.querySelector(modal).style.display = 'block';
+                target.setAttribute("data-toggle", "modalOpen")
+            }
+
+            function closeModal(e){
+                var target = window.event.target.parentElement.parentElement
+                target.style.display = 'none';
+            }
+
+
+        </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+<script src="test.js"></script>
+    </body>
+</html>
