@@ -257,8 +257,26 @@ function gameOver(state){
  
 }
 document.addEventListener("DOMContentLoaded", (e)=>{
+  // handle audio click
+  document.addEventListener("click", (e)=>{
+    if(e.target.id === 'audio-icon'){
+      if(document.querySelector("audio").paused === true){
+        document.querySelector(".audio-tag").innerHTML = `<i id='audio-icon' class="fas fa-volume-up"></i>`
+        document.querySelector("audio").play()
+      }else{
+        document.querySelector(".audio-tag").innerHTML = `<i id='audio-icon' class="fas fa-volume-mute"></i>`
+        document.querySelector("audio").pause()
+      }
+    }
+  })
+
   document.querySelector(".startGame").addEventListener("click", (e)=>{
+    document.querySelector(".audio-tag").style.display = 'block'
+    document.querySelector("audio").play()
     document.querySelector(".starterContent").style.display = 'none'
+    
+    // starting music
     init()
   })
 })
+

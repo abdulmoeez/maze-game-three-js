@@ -5,7 +5,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
@@ -20,7 +20,7 @@
         <div id="optionsModal" class="modal">
             <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <p>Just dont hit the walls and try to find a escape within the time</p>
+            <p>Just dont hit the walls and try to reach the orange box</p>
             </div>
         </div>
 
@@ -32,6 +32,10 @@
             <div class="options" id="right"></div>
         </div>
     </section>  
+
+    <div class="audio-tag" style="display: none;">
+        <i id="audio-icon" class="fas fa-volume-up"></i>
+    </div>
         <script>
             
             function modalToggle(e){
@@ -48,8 +52,10 @@
 
 
         </script>
+
+    <audio src="theme.mp3"></audio>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
   <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
-<script src="test.js"></script>
+<script src="script.js"></script>
     </body>
 </html>
